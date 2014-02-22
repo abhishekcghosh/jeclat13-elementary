@@ -1,0 +1,251 @@
+@charset "utf-8";
+
+body {
+	margin: 0px;
+	padding: 0px;
+	
+	background-color: rgba(24,0,82,1);
+}
+
+@font-face 
+{
+	font-family: 'SgUIL';
+	src: url('segoeuil.woff') format('woff'); 
+	
+}
+
+
+.container {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+	
+	z-index: 100;
+}
+
+.titleContainer {
+	height: 200px;
+	width: 560px;;
+	
+	text-align: right;
+	
+}
+
+.titleSub {
+	position: relative;
+	top: 50px;
+	font-family: SgUIL, Verdana, Geneva, sans-serif;
+	font-size: 20px;
+	color: rgba(255,255,255,0.5);
+	text-align: right;
+	opacity: 0;
+		
+	-webkit-transition: opacity 4s;
+}
+
+
+.titleMain {
+	font-family: SgUIL, Verdana, Geneva, sans-serif;
+	font-size: 120px;
+	color: #fff;
+	
+	text-align: right;
+	
+	cursor: pointer;
+	
+		text-shadow: 0px 0px 10px rgba(255,255,255,0.5);
+
+	
+}
+
+.titleMenuContainer {
+	position: relative;
+	top: -20px;
+	font-family: SgUIL, Verdana, Geneva, sans-serif;
+	font-size: 28px;
+	
+	text-align: right;
+	
+}
+
+.titleMenu {
+	list-style-type: none;
+	
+	margin: 0px;
+	padding: 0px;
+	outline: 0px;
+	
+	width: 480px;
+}
+
+.titleMenuItem {
+	display: none;
+	cursor: pointer;
+	color: rgba(255,255,255,0.35);
+	
+	-webkit-transition: color 1s;
+	-moz-transition: color 1s;
+	-o-transition: color 1s;
+	-ms-transition: color 1s;
+	transition: color 1s;
+	
+	
+}
+.titleMenuItem:hover {
+	color: rgba(255,255,255,1);
+}
+.titleMenuItemOpen {
+	color: rgba(255,255,255,1);
+}
+
+
+.rightCompressionPane {
+	width: 0px;
+	background-color: #fff;
+	
+	-webkit-transition: width 1s;
+	-moz-transition: width 1s;
+	-o-transition: width 1s;
+	-ms-transition: width 1s;
+	transition: width 1s;
+	
+}
+
+.rightDataPane {
+	position: fixed;
+	right: -400px;
+	top: 0px;
+	bottom: 0px;
+	
+	width: 400px;
+	height: 100%;
+	
+	-webkit-transition: right 1s;
+	-moz-transition: right 1s;
+	-o-transition: right 1s;
+	-ms-transition: right 1s;
+	transition: right 1s;
+	
+	z-index: 150;
+	
+}
+
+.dataPane {
+	display: none;
+	
+	
+	text-align: left;
+	vertical-align: top;
+	
+	font-family: SgUIL, Verdana, Geneva, sans-serif;
+	font-size: 20px;
+	color: rgba(24,0,82,1);
+	
+	padding: 0px;
+	
+	
+	
+}
+
+
+.randomData {
+	
+	position: fixed;
+	top: 100px;
+	left: 200px;
+	
+	font-family: SgUIL, Verdana, Geneva, sans-serif;
+	font-size: 60px;
+	color: rgba(255,255,255,0.05);
+
+	opacity: 0;
+	
+	-webkit-transition: opacity 0.5s;
+	-moz-transition: opacity 0.5s;
+	-o-transition: opacity 0.5s;
+	-ms-transition: opacity 0.5s;
+	transition: opacity 0.5s;
+	
+
+	text-shadow: 0px 0px 10px rgba(255,255,255,0.1);
+	
+	z-index: 50;
+}
+
+.paneHeading {
+	background-color: rgba(24,0,82,0.6);
+	color: #fff;
+	padding: 10px;
+	font-size: 24px;
+}
+.paneContent {
+	padding: 10px;
+	font-size: 16px;
+	color: rgba(24,0,82,1);
+}
+.formFeedbackMsg {
+	color: #c00;
+}
+
+form > input {
+	font-family: SgUIL, Verdana, Geneva, sans-serif;
+	font-size: 16px;
+	color: #000;
+	border: 2px solid #ccc;
+	padding: 5px;
+	width: 360px;
+}
+form > input:focus {
+	border-color: #999;
+}
+
+
+form > input[type="submit"] {
+	width: 120px;
+	cursor: pointer;
+	color: #fff;
+	background-color: rgba(24,0,82,0.8);
+	
+	-webkit-transition: background-color 0.5s;
+	-moz-transition: background-color 0.5s;
+	-o-transition: background-color 0.5s;
+	-ms-transition: background-color 0.5s;
+	transition: background-color 0.5s;
+	
+}
+form > input[type="submit"]:hover {
+	background-color: rgba(24,0,82,1);
+}
+
+
+.paneLinks {
+	text-decoration: none;
+	color: rgba(24,0,82,1);
+}
+.paneLinks:hover {
+	cursor:pointer;
+	border-bottom: 1px dotted rgba(24,0,82,1);
+}
+
+
+.aboutPara {
+	line-height: 150%;
+	/*font-size: 20px;*/
+	text-align: justify;
+}
+
+
+.rulesList {
+	list-style-type: square;
+	outline: 0px;
+	margin: 0px;
+}
+.rulesList > li {
+	text-align: justify;
+	line-height: 150%;
+	margin-bottom: 10px;
+}

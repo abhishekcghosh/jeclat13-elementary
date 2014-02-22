@@ -1,0 +1,35 @@
+.v-carousel-mask1, .v-carousel-mask2 {
+	width: 270px; 
+	overflow: hidden; 
+	text-align: left;
+}
+.v-carousel-mask1 {
+	height: 500px;
+}
+.v-carousel-mask2 {
+	height: 230px;
+}
+.v-carousel-mask1 ul, .v-carousel-mask2 ul {
+	padding: 0px;
+}
+.v-carousel-mask1 li, .v-carousel-mask2 li {
+	border-top: 2px dotted rgba(255,255,255,0.2); 
+	color:#fff; 
+	padding: 20px; 
+	font-size: 12px; 
+	font-family:  MuseoSlab500, "Trebuchet MS", Arial, Helvetica, sans-serif;
+	list-style: none;
+	text-align: left;
+	text-shadow: #000 1px 1px 1px;
+	opacity: 0.1;
+}
+.v-carousel-mask1 .visible-carousel-item, .v-carousel-mask2 .visible-carousel-item {
+	color: #fff;
+	opacity: 1;
+	
+	-webkit-transition: opacity 2s;
+	-moz-transition: opacity 2s;
+	-o-transition: opacity 2s;
+	-ms-transition: opacity 2s;
+	transition: opacity 2s;
+}

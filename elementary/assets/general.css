@@ -1,0 +1,311 @@
+@charset "utf-8";
+
+@font-face 
+{
+	font-family: 'SgUIL';
+	src: url('segoeuil.woff') format('woff'); 
+}
+
+body {
+	margin: 0px;
+	padding: 0px;
+	background-color: rgba(24,0,82,0.1);
+	
+	font-family: SgUIL, Verdana, Geneva, sans-serif;
+	font-size: 20px;
+}
+
+img {
+	border: none;
+}
+
+a {
+	text-decoration: none;	
+}
+
+.container {
+	width: 100%;
+	height: 100%;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+}
+
+.topBar {
+	width: 100%;
+	height: 50px;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	font-family: SgUIL, Verdana, Geneva, sans-serif;
+	font-size: 20px;
+	color: #fff;
+	
+	z-index: 1000;
+}
+
+.topBarItem {
+	vertical-align: middle;
+	padding: 0px 10px;
+	height: 50px;
+}
+
+#tbi_logo {
+	text-align: center;
+	width: 90px;
+	background-color: rgba(24,0,82,0.8);
+}
+#tbi_icon {
+	text-align: center;
+	width: 50px;
+	/*background-image:url('discuss.png');
+	background-repeat: no-repeat;*/
+	background-color: rgba(24,0,82,0.8);
+	padding: 0px;
+	cursor: pointer;
+}
+#tbi_icon:hover {
+	background-color: rgba(24,0,82,0.6);
+}
+#tbi_levelinfo {
+	text-align: left;
+	width: 300px;
+	background-color: rgba(24,0,82,0.95);
+}
+#tbi_buffer1 {
+	background-color: rgba(24,0,82,0.95);
+}
+
+#tbi_user {
+	text-align: right;
+	width: 100px;
+	background-color: rgba(24,0,82,0.95);
+}
+#tbi_user:hover > .accountOptions {
+	display: block;
+}
+
+.accountOptions {
+	list-style-type: none;
+	position: fixed;
+	top: 50px;
+	right: 50px;
+	margin: 0px;
+	padding: 0px;
+	outline: 0px;
+	width: 200px;
+	z-index: 1100;
+	display: none;
+}
+.accountOptions > li {
+	padding: 10px;
+	cursor: pointer;	
+	background-color: rgba(24,0,82,0.8);
+	border-bottom: 1px dashed rgba(255,255,255,0.2);
+}
+.accountOptions > li:hover {
+	background-color: rgba(24,0,82,0.6);
+}
+
+.accountOptionsLinks {
+	color: #fff;
+	display: block;
+}
+
+
+.hintBarContainer {
+	width: 700px;
+	background-color: rgba(24,0,82,0.2);
+	text-align: justify;
+	margin-bottom: 10px;
+	padding: 10px;
+	
+	font-size: 16px;
+	
+}
+
+.answerBarContainer {
+	width: 720px;
+	background-color: rgba(24,0,82,0.2);
+	text-align: left;
+	margin-bottom: 10px;
+}
+
+.formItems {
+	border: 1px solid rgba(24,0,82,0.5);
+	height: 50px;
+	
+	font-family: SgUIL, Verdana, Geneva, sans-serif;
+	font-size: 20px;
+}
+
+#formAnswer_text {
+	width: 550px;
+	padding: 0px 10px;
+	color: #999;
+}
+
+#google_text {
+	width: 420px;
+	padding: 0px 10px;
+	color: #999;
+}
+
+#formAnswer_submit, #google_submit {
+	cursor: pointer;
+	width: 118px;
+	height: 52px;
+	background-color: rgba(24,0,82,0.6);
+	color: rgba(255,255,255,0.9);
+}
+#google_submit {
+	width: 120px !important;
+}
+#formAnswer_submit:hover, #google_submit:hover {
+	background-color: rgba(24,0,82,0.8);
+}
+
+.formItemsComment {
+	border: 1px solid rgba(24,0,82,0.5);
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 12px;
+	padding: 5px;
+}
+.formItemsComment[type="submit"] {
+	height: 30px;
+	width: 70px;
+	background-color: rgba(24,0,82,0.6);
+	cursor: pointer;
+	color: rgba(255,255,255,1);
+}
+.formItemsComment[type="submit"]:hover {
+	background-color: rgba(24,0,82,0.8);
+}
+
+.formItemsPassword {
+	border: 1px solid rgba(24,0,82,0.5);
+	font-family: SgUIL, Verdana, Geneva, sans-serif;
+	font-size: 16px;
+	padding: 5px;
+}
+.formItemsPassword[type="submit"] {
+	background-color: rgba(24,0,82,0.6);
+	cursor: pointer;
+	color: rgba(255,255,255,1);
+}
+.formItemsPassword[type="submit"]:hover {
+	background-color: rgba(24,0,82,0.8);
+}
+.changePasswordFeedback {
+	color: #c00;
+}
+
+
+
+.pictureContainer {
+	width: 700px;
+	background-color: rgba(24,0,82,0.2);
+	padding: 10px;
+	
+}
+
+.googleSearchContainer {
+	width: 720px;
+	background-color: rgba(24,0,82,0.2);
+	margin-top: 10px;
+	height: 70px;
+	padding: 0px;
+}
+
+.footerContainer {
+	width: 700px;
+	margin-top: 20px;
+	padding: 0px 10px;
+	font-size: 16px;
+	color: #666;
+}
+
+.winnerContainer {
+	width: 700px;
+	background-color: rgba(24,0,82,0.2);
+	padding: 10px;
+	height: 400px;
+	font-size: 32px;
+	color: rgba(24,0,82,1);
+}
+.winnerBannerMain {
+	font-size: 120px;
+}
+
+.rulesContainer {
+	width: 700px;
+	background-color: rgba(24,0,82,0.2);
+	padding: 10px;
+	text-align: justify;
+	line-height: 150%;
+}
+.rulesList {
+	margin: none; 
+	padding: none; 
+	outline: none; 
+	margin-right: 20px
+}
+.rulesList > li {
+	margin-bottom: 20px;
+}
+
+
+.leaderBoardTable {
+	background-color: rgba(24,0,82,0.1);
+	font-size: 16px;
+}
+.leaderBoardTable td {
+	padding: 5px;
+	text-align: left;
+	vertical-align: top;
+	
+}
+.leaderBoardTable tr:nth-child(2n) {
+	background-color: rgba(24,0,82,0.1);
+}
+.leaderBoardTable tr:first-child {
+	font-weight: bold;
+	background-color: rgba(24,0,82,0.4);
+}
+
+.commentThreadContainer {
+	margin-top: 10px;
+	border-top: 1px dashed rgba(24,0,82,0.4);
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 12px;
+	color: #222;
+	height: 400px;
+	overflow-y: scroll;
+}
+
+.commentPostTable {
+	
+}
+.commentPostTable td {
+	padding-bottom: 10px;
+	border-bottom: 1px dotted #ccc;
+	margin-bottom: 10px;
+	padding-top: 10px;
+}
+
+.commentPostName {
+	font-weight: bold;
+	color: rgba(24,0,82,0.8);
+}
+
+.commentPostTime {
+	font-size: 10px;
+	color: #999;
+}
+
+.commentPostComment {
+}
+
+
