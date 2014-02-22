@@ -1,0 +1,16 @@
+create table j13_alumni(aid bigint(10) not null auto_increment primary key, name varchar(256) not null, collegenick varchar(128), yearofpassout varchar(5) not null, department varchar(4) not null, company varchar(256), phone varchar(16) not null, emailid varchar(256) not null, attendingstatus varchar(6) not null );
+
+create table j13_updates(upid int(3) not null auto_increment primary key, updatevalue varchar(10000) not null);
+
+create table j13_feedback(fid bigint(6) not null auto_increment primary key, name varchar(128) not null, emailid varchar(256), timestamp datetime not null, message varchar(900) not null);
+
+create table j13_users(uid bigint(10) not null auto_increment primary key, fullname varchar(256) not null, college varchar(256), phone varchar(16) not null, emailid varchar(256) not null, password varchar(50) not null);
+
+create table j13_general(attribname varchar(64) not null, attribvalue varchar(64) not null);
+
+
+create table j13_elementary_levels(elid bigint(10) not null auto_increment primary key, uid bigint(10) not null, currentlevel int(2) not null, whenreached datetime not null);
+
+create table j13_elementary_wronganswers(asid bigint(15) not null primary key auto_increment, uid bigint(10) not null, level int(2) not null, wronganswer varchar(256));
+
+create table j13_elementary_winners(rankid bigint(10) not null auto_increment primary key, uid bigint(10) not null, whenreached datetime not null);
