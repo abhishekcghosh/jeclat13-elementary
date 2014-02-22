@@ -10,4 +10,4 @@ Note:
 	attribname = hitcount_high, attribvalue = 0,
 	attribname = hitcount_low, attribvalue = 0.
 * Since **elementary** season 1 was long over, and the entire questions are included in the code, so are the answers to the puzzles :)
-
+* Also, the **.htaccess** file provided has some entries that must be added to the websites' .htaccess file. Otherwise, Gzipped SVG image that is used will not be recognized and rendered by all browsers properly, especially Mozilla Firefox.
